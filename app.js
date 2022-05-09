@@ -144,7 +144,7 @@ let message = function(name) {
 console.log(message('Allie'));
 
 
-let Student = function(name, age, hometown) {
+let Student = function(name, hometown, age) {
     this.name = name;
     this.age = age;
     this.hometown = hometown;
@@ -197,8 +197,10 @@ joe.scopeArrow();
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
+// "this" refers to the Student object Joe
 //
 // 2. What is "this" when joe.scopeArrow() is invoked?
+// "this" refers to the entire window
 //
 // 3. Explain why "this" is different when an arrow function is used.
-//
+// this is different because arrow functions don't have their own bindings // to this
